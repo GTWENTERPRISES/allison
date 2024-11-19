@@ -1,6 +1,6 @@
 "use client";
 
-import { ShoppingCart, Store, Users, FileText, Settings, Package } from "lucide-react";
+import { ShoppingCart, Store, Users, FileText, Settings, Package, Computer } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -23,8 +23,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Store className="h-8 w-8" />
-            <span className="ml-2 text-xl font-bold">VentasEC</span>
+            <Computer className="h-8 w-8" />
+            <span className="ml-2 text-xl font-bold">CyberAllison</span>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -43,7 +43,7 @@ export default function Navbar() {
                 </Button>
               );
             })}
-            <ThemeToggle />
+            
           </div>
         </div>
       </div>
